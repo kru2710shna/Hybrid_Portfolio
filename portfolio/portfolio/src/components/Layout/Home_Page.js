@@ -6,7 +6,7 @@ const Home_Page = () => {
         <div className="home-page">
             <header className="home-header">
                 <h1>Welcome to My Portfolio</h1>
-                <p>Explore my projects, skills, and journey in technology.</p>
+                <p>Explore my journey in technology.</p>
             </header>
             <div className="home-content">
                 <button className="portfolio-button" onClick={() => window.location.href='/main_page'}>

@@ -1,47 +1,203 @@
 /* Main container */
 .main-page {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding: 40px 20px 20px;
+    height: 100vh;
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
 }
 
-/* Styling for the left and right containers */
-.left, .right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+
+.intro-section {
+    margin-top: -20px; /* Move the section up by 20px, adjust the value as needed */
     text-align: center;
 }
 
-/* Styling for the heading */
-.left h1, .right h1 {
-    margin-bottom: 10px; 
+/* Styling for the name */
+.intro-section h1 {
+    font-size: 4rem;
+    margin-top: 50px;
+    text-align: center;
 }
 
-/* Styling for the paragraph */
-.left p, .right p {
+/* Styling for the short description */
+.intro-section p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
+.education-section {
+    margin-top: 70px;
+}
+
+.education-section h {
+    text-align: center;
+}
+
+.education-section p {
+    text-align: center;
+    margin-left: -30px;  /* Adjust this value as needed to move the text slightly left */
+
+
+}
+/* Styling for the "My Achievements" section */
+.stats-section {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.stats-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Stats container taking full width */
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 120px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stat-item {
+    flex: 1;
+    max-width: 150px;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
     font-size: 1rem;
     color: #ccc;
-    margin: 0;
 }
 
-/* Divider */
-.divider {
-    width: 2px; /* Thickness of the divider */
-    background-color: white; /* Divider color */
-    height: 80%; /* Adjust height of the divider */
-    align-self: center; /* Centers the divider */
+/* Styling for the "I do" section */
+.i-do-section {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
 }
 
-/* Hover effect for sections */
+.i-do-section h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+
+/* Arrow container */
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Animated dancing arrow */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    animation: dance 1s infinite alternate; /* Dancing effect */
+}
+
+/* Dancing animation for the arrow */
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Dividing left and right halves */
+.left-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    margin-bottom: 250px;
+    width: 100%;
+}
+
+/* Left and Right Sections */
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem; /* Medium font size */
+    color: #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Add hover effect with shadow */
 .left:hover, .right:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Shadow effect on hover */
+}
+
+/* Headings inside left and right */
+.left h2, .right h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.left p, .right p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Divider between left and right sections */
+.divider {
+    width: 2px; /* Thin border */
+    height: calc(100% - 140px); /* Ensure border is between the sections */
+    border-left: 2px solid white; /* Solid vertical border */
+    margin: 0 20px; /* Space between the sections */
+    color: white;
+}
+
+/* Adjust the left-right section layout with divider */
+.left-right {
+    position: relative;
+}
+
+/* Add divider as a pseudo-element between left and right sections */
+.left-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+    margin-left: -1px; /* To center the border between left and right */
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer p {
+    margin: 5px 0;
 }
