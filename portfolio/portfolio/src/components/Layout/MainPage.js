@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import AnimatedNumber from './AnimatedNumber'; // Import the AnimatedNumber component
+import Experience from './Experience';
 
 
 const MainPage = () => {
@@ -82,6 +83,15 @@ const MainPage = () => {
                     <p>Open! MLE Door</p>
                 </div>
             </section>
+
+            <div className="arrow-container-2">
+                <div className="arrow-2"></div>
+            </div>
+
+            <Experience/>
+
+            
+
 
             {/* Footer */}
             <footer className="footer">

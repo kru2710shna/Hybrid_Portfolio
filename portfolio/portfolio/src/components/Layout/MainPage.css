@@ -194,6 +194,25 @@
     margin-left: -1px; /* To center the border between left and right */
 }
 
+
+/* Arrow container */
+.arrow-container-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+/* Animated dancing arrow */
+.arrow-2 {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    animation: dance 1s infinite alternate; /* Dancing effect */
+}
+
+
 /* Footer styling */
 .footer {
     margin-top: 50px;

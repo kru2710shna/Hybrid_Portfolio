@@ -1,0 +1,68 @@
+.experience-container {
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item {
+    background: black;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Flexbox for better alignment */
+    gap: 20px; /* Space between logo and text */
+}
+
+.experience-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-radius: 1cqi; 
+    border: 1px solid #ccc;
+    object-fit: cover; 
+    flex-shrink: 0; 
+}
+
+.company-name {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.position-title,
+.job-type,
+.description {
+    font-size: 1rem;
+    color: white;
+}
+
+.text-muted {
+    color: white !important; /* Override default color to white */
+    font-size: 1rem; /* Optional: adjust the font size */
+}
+
+.links a {
+    font-size: 0.9rem;
+}
+
+.links a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.custom-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ccc, #000, #ccc);
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.text-content {
+    flex: 1; /* Allows description to take up remaining space */
+}
