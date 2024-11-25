@@ -32,7 +32,7 @@
     margin-top: 20px;
 }
 .education-section {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .education-section h {
@@ -41,7 +41,7 @@
 
 .education-section p {
     text-align: center;
-    margin-left: -30px;  /* Adjust this value as needed to move the text slightly left */
+    margin-left: -60px;  /* Adjust this value as needed to move the text slightly left */
 
 
 }
@@ -79,9 +79,13 @@
 
 .stat-item p {
     font-size: 1rem;
-    color: #ccc;
+    color: #ccc; 
 }
 
+.p_ss { /* Move the section up by 20px, adjust the value as needed */
+    text-align: center;
+
+}
 /* Styling for the "I do" section */
 .i-do-section {
     margin-top: 25px;
@@ -99,7 +103,7 @@
 .arrow-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 /* Animated dancing arrow */
@@ -200,4 +204,16 @@
 
 .footer p {
     margin: 5px 0;
+}
+
+
+/* Remove underline from links and style them as normal text */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Match the parent text color */
+    cursor: pointer;
+}
+
+a:hover {
+    color: #4CAF50; /* Optional: Add hover effect for better user experience */
 }

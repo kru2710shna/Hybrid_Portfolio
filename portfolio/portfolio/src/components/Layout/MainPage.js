@@ -3,8 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import AnimatedNumber from './AnimatedNumber'; // Import the AnimatedNumber component
 
+
 const MainPage = () => {
     const navigate = useNavigate();
+
 
     // Placeholder data, could be dynamically passed as props or state
     const name = "Krushna Thakkar";
@@ -15,19 +17,19 @@ const MainPage = () => {
         <div className="main-page">
             <section className="intro-section">
                 <h1>{name}</h1> {/* Display Name dynamically */}
-                <p>Hi, Thanks for taking some time off to visit my Website. I'm  Software Engineer + {role} practitioner. </p> 
+                <p>Hi, Thanks for taking some time off to visit my Website. I'm  Software Engineer + {role} practitioner. </p>
             </section>
 
             <section className="education-section">
                 <h1>Education</h1>
                 <p>San Francisco State University</p>
-                <p>{education}</p> 
-                <p>Majoring- Computer Science </p>
-                <p>Expected- May'25 </p>
+                <p>{education} - May'25</p>
             </section>
 
             <section className="stats-section">
-                <h2>My Achievements</h2>
+                <h2>Achievements</h2>
+                <p className='p_ss'>Click Each to checkout in Detail</p>
+                <p></p>
                 <div className="stats">
                     <div className="stat-item">
                         <AnimatedNumber target={34} speed={500} />
@@ -44,6 +46,10 @@ const MainPage = () => {
                     <div className="stat-item">
                         <AnimatedNumber target={100} speed={500} />
                         <p>Skills</p>
+                    </div>
+                    <div className="stat-item">
+                        <AnimatedNumber target={2} speed={500} />
+                        <p>Work Experience</p>
                     </div>
                     <div className="stat-item">
                         <AnimatedNumber target={2} speed={500} />
@@ -66,7 +72,7 @@ const MainPage = () => {
 
             {/* Left and Right sections */}
             <section className="left-right">
-                
+
                 <div className="left" onClick={() => navigate('/left')}>
                     <h2>Software Engineering</h2>
                     <p>Open! SWE Door</p>

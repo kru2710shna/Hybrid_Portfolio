@@ -25,3 +25,17 @@
     background-color: #ccc;
     transform: scale(1.1); /* Button enlarges slightly on hover */
 }
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black; /* Optional to match the background */
+    min-height: 100vh;
+}
+
+.projects-section {
+    margin-top: 50px; /* Adjust the spacing between the components */
+    width: 100%;
+}
