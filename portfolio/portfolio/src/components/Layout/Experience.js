@@ -39,7 +39,7 @@ open-source tools for efficient data indexing and formatting`,
 const Experience = () => {
     return (
         <div className="experience-container container">
-            <h1 className="text-center my-4">Work Experience</h1>
+            <h1 className="text-center my-4">Work Experience [ 2 ] </h1>
             {experiences.map((exp, index) => (
                 <div key={index}>
                     <div className="experience-item row align-items-center mb-4">

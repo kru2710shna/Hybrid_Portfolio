@@ -28,7 +28,7 @@ const MainPage = () => {
             </section>
 
             <section className="stats-section">
-                <h2>Achievements</h2>
+                <h2>Achievements Stats</h2>
                 <p className='p_ss'>Click Each to checkout in Detail</p>
                 <p></p>
                 <div className="stats">
