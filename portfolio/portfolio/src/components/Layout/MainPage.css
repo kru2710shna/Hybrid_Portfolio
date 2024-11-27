@@ -8,12 +8,14 @@
     color: white;
     padding: 40px 20px 20px;
     height: 100vh;
-    overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+    overflow-y: auto;
+    /* Allow scrolling if content exceeds viewport height */
 }
 
 
 .intro-section {
-    margin-top: -20px; /* Move the section up by 20px, adjust the value as needed */
+    margin-top: -20px;
+    /* Move the section up by 20px, adjust the value as needed */
     text-align: center;
 }
 
@@ -31,6 +33,7 @@
     color: #ccc;
     margin-top: 20px;
 }
+
 .education-section {
     margin-top: 50px;
 }
@@ -41,10 +44,12 @@
 
 .education-section p {
     text-align: center;
-    margin-left: -60px;  /* Adjust this value as needed to move the text slightly left */
+    margin-left: -60px;
+    /* Adjust this value as needed to move the text slightly left */
 
 
 }
+
 /* Styling for the "My Achievements" section */
 .stats-section {
     margin-top: 70px;
@@ -79,16 +84,18 @@
 
 .stat-item p {
     font-size: 1rem;
-    color: #ccc; 
+    color: #ccc;
 }
 
-.p_ss { /* Move the section up by 20px, adjust the value as needed */
+.p_ss {
+    /* Move the section up by 20px, adjust the value as needed */
     text-align: center;
 
 }
+
 /* Styling for the "I do" section */
 .i-do-section {
-    margin-top: 25px;
+    margin-top: 95px;
     text-align: center;
     color: white;
 }
@@ -113,7 +120,8 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid white;
-    animation: dance 1s infinite alternate; /* Dancing effect */
+    animation: dance 1s infinite alternate;
+    /* Dancing effect */
 }
 
 /* Dancing animation for the arrow */
@@ -121,9 +129,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -141,39 +151,49 @@
 }
 
 /* Left and Right Sections */
-.left, .right {
+.left,
+.right {
     flex: 1;
     padding: 20px;
     cursor: pointer;
     text-align: center;
-    font-size: 1.5rem; /* Medium font size */
+    font-size: 1.5rem;
+    /* Medium font size */
     color: #ccc;
     transition: box-shadow 0.3s ease;
 }
 
 /* Add hover effect with shadow */
-.left:hover, .right:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Shadow effect on hover */
+.left:hover,
+.right:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    /* Shadow effect on hover */
 }
 
 /* Headings inside left and right */
-.left h2, .right h2 {
+.left h2,
+.right h2 {
     font-size: 3rem;
     color: white;
     margin-bottom: 10px;
 }
 
-.left p, .right p {
+.left p,
+.right p {
     font-size: 1.2rem;
     color: #ccc;
 }
 
 /* Divider between left and right sections */
 .divider {
-    width: 2px; /* Thin border */
-    height: calc(100% - 140px); /* Ensure border is between the sections */
-    border-left: 2px solid white; /* Solid vertical border */
-    margin: 0 20px; /* Space between the sections */
+    width: 2px;
+    /* Thin border */
+    height: calc(100% - 140px);
+    /* Ensure border is between the sections */
+    border-left: 2px solid white;
+    /* Solid vertical border */
+    margin: 0 20px;
+    /* Space between the sections */
     color: white;
 }
 
@@ -191,7 +211,8 @@
     left: 50%;
     width: 2px;
     background-color: white;
-    margin-left: -1px; /* To center the border between left and right */
+    margin-left: -1px;
+    /* To center the border between left and right */
 }
 
 
@@ -209,7 +230,8 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid white;
-    animation: dance 1s infinite alternate; /* Dancing effect */
+    animation: dance 1s infinite alternate;
+    /* Dancing effect */
 }
 
 
@@ -217,7 +239,7 @@
 .footer {
     margin-top: 50px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #ccc;
 }
 
@@ -228,11 +250,14 @@
 
 /* Remove underline from links and style them as normal text */
 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Match the parent text color */
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Match the parent text color */
     cursor: pointer;
 }
 
 a:hover {
-    color: #4CAF50; /* Optional: Add hover effect for better user experience */
+    color: #4CAF50;
+    /* Optional: Add hover effect for better user experience */
 }

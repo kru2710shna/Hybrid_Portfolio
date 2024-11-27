@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import AnimatedNumber from './AnimatedNumber'; // Import the AnimatedNumber component
-import Experience from './Experience';
 
 
 const MainPage = () => {
@@ -13,6 +12,11 @@ const MainPage = () => {
     const name = "Krushna Thakkar";
     const role = "Machine Learning";
     const education = "Bachlores in Computer Science";
+
+    const goToExperience = () => {
+        navigate('/experience'); // Navigate to experience page
+    };
+
 
     return (
         <div className="main-page">
@@ -48,7 +52,7 @@ const MainPage = () => {
                         <AnimatedNumber target={100} speed={500} />
                         <p>Skills</p>
                     </div>
-                    <div className="stat-item">
+                    <div className="stat-item" onClick={goToExperience}>
                         <AnimatedNumber target={2} speed={500} />
                         <p>Work Experience</p>
                     </div>
@@ -83,14 +87,6 @@ const MainPage = () => {
                     <p>Open! MLE Door</p>
                 </div>
             </section>
-
-            <div className="arrow-container-2">
-                <div className="arrow-2"></div>
-            </div>
-
-            <Experience/>
-
-            
 
 
             {/* Footer */}
