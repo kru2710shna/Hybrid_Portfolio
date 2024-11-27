@@ -1,10 +1,50 @@
-.right-page {
-    color: white;
+.right-page-container {
+    position: relative;
     background-color: black;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     text-align: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    position: absolute; /* Position it at the bottom center */
+    bottom: 50px; /* Adjust as needed */
+    transform: translateX(-50%);
+    animation: bounce 1s infinite;
+    left: 2.5%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px); /* Move arrow down */
+    }
+    100% {
+        transform: translateX(-50%) translateY(0); /* Return to original position */
+    }
+}
+
+.project-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
 }

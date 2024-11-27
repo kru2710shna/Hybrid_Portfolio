@@ -1,0 +1,59 @@
+.project-ml-container {
+    background-color: black; /* Set the background to black */
+    color: white; /* Set text color to white */
+    padding: 40px 20px; /* Add padding for spacing */
+    text-align: center;
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    /* margin-bottom: 500px; Add spacing for the next component call */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-top: 450px; /* Add space from the top */
+}
+
+.project-ml-container h2 {
+    font-size: 28px;
+    letter-spacing: 1px; /* Add spacing between letters */
+    display: inline-block; /* Center the underline with the text */
+    padding-bottom: 10px; /* Space between text and underline */
+}
+
+.project-ml-container p {
+    font-size: 16px;
+    letter-spacing: 1px; /* Add spacing between letters */
+    display: inline-block; /* Center the underline with the text */
+    padding-bottom: 10px; /* Space between text and underline */
+}
+
+.project-ml-container p span {
+    font-size: 14px; /* Adjust font size for author attribution */
+    display: block; /* Ensure it's on a new line */
+    margin-top: 5px; /* Add some spacing from the quote */
+}
+
+
+/* Arrow pointing downwards */
+.arrow-1 {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    margin: 0 auto;
+    animation: bounce 1s infinite;
+    margin-top: 250px;
+    margin-left: 830px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Move arrow down */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}

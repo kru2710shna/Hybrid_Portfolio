@@ -6,6 +6,8 @@ import RightComponent from './components/RightComponent/RightComponent.js'
 import HomePage from './components/Layout/Home_Page.js'
 import Projects from './components/LeftComponent/Projects.js';
 import Experience from './components/Layout/Experience.js';
+import ProjectML from './components/RightComponent/ProjectML.js'
+import ProjectsMLDetail from './components/RightComponent/ProjectsMLDetail.js';
 
 const App = () => {
     return (
@@ -18,6 +20,8 @@ const App = () => {
                 <Route path="*" element={<HomePage />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/projectml" element={<ProjectML />} />
+                <Route path="/project-detail" element={<ProjectsMLDetail />} />
 
 
             </Routes>

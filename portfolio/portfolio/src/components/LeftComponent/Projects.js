@@ -57,7 +57,6 @@ const Projects = () => {
         <div className="timeline">
             <div className="arrow"></div>
             <div class="timeline-container">
-                <h2 className="timeline-title">Projects</h2>
                 {projects.map((project, index) => (
                     <div
                         key={index}

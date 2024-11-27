@@ -1,0 +1,104 @@
+.projects-detail-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    justify-content: center; /* Centers the rows horizontally */
+    gap: 20px; /* Space between cards */
+    padding: 40px 20px;
+    background-color: black;
+    color: white;
+    margin-top: 700px;
+    gap: 60px;
+}
+
+.projects-detail-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: white; /* Set the text color to a cool blue */
+    margin-bottom: 40px; /* Add space below the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+.spaced-word {
+    margin-right: 30px; /* Add space between each span */
+}
+
+
+.project-card {
+    flex: 0 0 calc(33.333% - 40px); /* Ensures three cards per row with gap adjustments */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow for the border effect */
+}
+
+.red-border {
+    box-shadow: 0 6px 12px #00bfff; 
+}
+
+.yellow-border {
+    box-shadow: 0 6px 12px #00bfff; 
+}
+
+.green-border {
+    box-shadow: 0 6px 12px #00bfff; 
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.project-header h3 {
+    font-size: 20px;
+}
+
+.project-header .project-date {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.project-detail-info {
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    align-items: flex-start; /* Align text to the left */
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+.project-detail-info p {
+    font-size: 14px;
+    color: lightgray;
+    margin: 5px 0; /* Space between lines */
+    text-align: left; /* Ensure text aligns properly */
+}
+.project-link-container {
+    margin-top: 5px;
+}
+
+.project-link {
+    color: #00bfff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
