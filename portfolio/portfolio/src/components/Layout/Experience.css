@@ -1,26 +1,12 @@
-/* Reset default body margin and padding */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* General Container Styling */
 .experience-container {
     background-color: black;
     padding: 0 50px; /* Left and Right padding */
-    margin: 0 auto; /* Centers container horizontally */
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 50px; /* Adjust top margin if needed */
+}
+
+.experience-header {
+    padding-top: 450px;
 }
 
 /* Title Styling */
@@ -45,7 +31,7 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 /* Animated dancing arrow */

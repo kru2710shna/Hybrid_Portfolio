@@ -10,17 +10,19 @@
     text-align: center;
 }
 
-.arrow {
+.arrow303 {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid white;
-    position: absolute; /* Position it at the bottom center */
     bottom: 50px; /* Adjust as needed */
     transform: translateX(-50%);
     animation: bounce 1s infinite;
     left: 2.5%;
+    justify-content: center;
+    margin-top: 400px;
+
 }
 
 @keyframes bounce {

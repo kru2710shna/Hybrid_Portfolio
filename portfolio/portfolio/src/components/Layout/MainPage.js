@@ -16,6 +16,9 @@ const MainPage = () => {
     const goToExperience = () => {
         navigate('/experience'); // Navigate to experience page
     };
+    const goToProjects = () => {
+        navigate('/projectml'); // Navigate to experience page
+    };
 
 
     return (
@@ -40,7 +43,7 @@ const MainPage = () => {
                         <AnimatedNumber target={34} speed={500} />
                         <p>Certifications & Licenses</p>
                     </div>
-                    <div className="stat-item">
+                    <div className="stat-item" onClick={goToProjects}>
                         <AnimatedNumber target={25} speed={500} />
                         <p>Projects</p>
                     </div>
@@ -70,8 +73,8 @@ const MainPage = () => {
             {/* I do section */}
             <section className="i-do-section">
                 <h1>I-Do, I-Am</h1>
-                <div className="arrow-container">
-                    <div className="arrow"></div>
+                <div className="arrow-container101">
+                    <div className="arrow101"></div>
                 </div>
             </section>
 

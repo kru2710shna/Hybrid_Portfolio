@@ -48,10 +48,10 @@ const Experience = () => {
 
     }
     return (
-        <div className="experience-container container">
+        <div className="experience-container">
             {/* Title and Quote Section */}
             <div className="experience-header text-center">
-                <h1 className="experience-title my-4">Work Experience</h1>
+                <h1 className="experience-title">Work Experience</h1>
                 <p className="experience-quote ">
                     “The reward for work well done is the opportunity to do more.” – Jonas Salk
                 </p>

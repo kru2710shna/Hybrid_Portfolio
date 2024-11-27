@@ -16,7 +16,7 @@ const Projects = () => {
             date: "October 2024",
             description: "Application to track Hurricane all over US from Nothern Atlantic Basin.",
             link: "https://github.com/kru2710shna/Pre_Hurricane",
-            techStack: ["Google Cloud Platform", "Google Drive","Gimini", "Google Maps", "Google Earth Engine"],
+            techStack: ["Google Cloud Platform", "Google Drive", "Gimini", "Google Maps", "Google Earth Engine"],
             side: "right",
         },
         {
@@ -24,7 +24,7 @@ const Projects = () => {
             date: "September 2024",
             description: "Self-Notes Taking Application + WORD Application Functionalities",
             link: "https://github.com/kru2710shna/iNotebook",
-            techStack: ["React","Node","Express"],
+            techStack: ["React", "Node", "Express"],
             side: "left",
         },
         {
@@ -32,7 +32,7 @@ const Projects = () => {
             date: "August-September 2024",
             description: "Your own News Application. Full-Stack Application that provides News from all corners of the world",
             link: "https://github.com/kru2710shna/NewsBreakApp-React",
-            techStack: ["React","Node","Express"],
+            techStack: ["React", "Node", "Express"],
             side: "right",
         },
         {
@@ -55,8 +55,9 @@ const Projects = () => {
 
     return (
         <div className="timeline">
-            <div className="arrow"></div>
+            <div className="arrow202"></div>
             <div class="timeline-container">
+                <h2 className="projects-title">Projects</h2>
                 {projects.map((project, index) => (
                     <div
                         key={index}
