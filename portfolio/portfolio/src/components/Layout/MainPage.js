@@ -19,6 +19,10 @@ const MainPage = () => {
     const goToProjects = () => {
         navigate('/projectml'); // Navigate to experience page
     };
+    const goToVolunteer = () => {
+        navigate('/volunteer'); // Navigate to experience page
+    };
+    
 
 
     return (
@@ -47,7 +51,7 @@ const MainPage = () => {
                         <AnimatedNumber target={25} speed={500} />
                         <p>Projects</p>
                     </div>
-                    <div className="stat-item">
+                    <div className="stat-item" onClick={goToVolunteer}>
                         <AnimatedNumber target={4} speed={500} />
                         <p>Volunteering Experience</p>
                     </div>

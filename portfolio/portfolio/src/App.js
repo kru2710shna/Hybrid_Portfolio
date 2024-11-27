@@ -8,6 +8,8 @@ import Projects from './components/LeftComponent/Projects.js';
 import Experience from './components/Layout/Experience.js';
 import ProjectML from './components/RightComponent/ProjectML.js'
 import ProjectsMLDetail from './components/RightComponent/ProjectsMLDetail.js';
+import Volunteer from './components/Volunteer.js'
+
 
 const App = () => {
     return (
@@ -22,6 +24,8 @@ const App = () => {
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/projectml" element={<ProjectML />} />
                 <Route path="/project-detail" element={<ProjectsMLDetail />} />
+                <Route path="/volunteer" element={<Volunteer />} />
+
 
 
             </Routes>
