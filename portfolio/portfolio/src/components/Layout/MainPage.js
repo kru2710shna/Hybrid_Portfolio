@@ -28,6 +28,9 @@ const MainPage = () => {
     const goToVoPublication = () => {
         navigate('/Publication '); // Navigate to experience page
     };
+    const goToVoSkills = () => {
+        navigate('/Skills '); // Navigate to experience page
+    };
     
 
 
@@ -61,8 +64,8 @@ const MainPage = () => {
                         <AnimatedNumber target={4} speed={500} />
                         <p>Volunteering Experience</p>
                     </div>
-                    <div className="stat-item">
-                        <AnimatedNumber target={100} speed={500} />
+                    <div className="stat-item" onClick={goToVoSkills}>
+                        <AnimatedNumber target={52} speed={500} />
                         <p>Skills</p>
                     </div>
                     <div className="stat-item" onClick={goToExperience}>

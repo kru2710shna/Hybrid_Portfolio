@@ -1,0 +1,125 @@
+.skills-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.skills-title {
+  font-size: 3rem;
+  padding-top: 440px;
+  margin-left: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ff00; /* Add green color to the title */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.skills-quote {
+  font-size: 1.5rem;
+  margin-bottom: 600px;
+  font-style: italic;
+  color: #888888;
+  animation: slideIn 2s ease-in-out;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.skill-item:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  border-color: #00bfff;
+}
+
+.skill-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.skill-logo:hover {
+  transform: rotate(360deg);
+  filter: brightness(1.2);
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 1px 3px #00bfff;
+  transition: color 0.3s;
+}
+
+.skill-name:hover {
+  color: #00ff00;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.back-button-container007 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.back-button007 {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}

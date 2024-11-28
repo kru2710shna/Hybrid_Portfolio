@@ -12,8 +12,11 @@ import ProjectsMLDetail from './components/RightComponent/ProjectsMLDetail.js';
 import Volunteer from './components/Volunteer/Volunteer.js'
 import Certificate from './components/Certificate/Certificate.js'
 import Publications from './components/Publication/Publications.js';
+import Skills from './components/Skills/Skills.js'
+
 
 const App = () => {
+
     return (
         <Router>
             <Routes>
@@ -29,6 +32,7 @@ const App = () => {
                 <Route path="/volunteer" element={<Volunteer />} />
                 <Route path="/Certificate" element={<Certificate />} />
                 <Route path="/Publication" element={<Publications />} />
+                <Route path="/Skills" element={<Skills />} />
 
             </Routes>
         </Router>
