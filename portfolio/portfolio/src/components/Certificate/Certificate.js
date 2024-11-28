@@ -1,5 +1,6 @@
 import React from 'react';
 import './Certificate.css'; // Import the CSS for styling
+import { useNavigate } from 'react-router-dom';
 
 const certificates = [
     {
@@ -253,11 +254,19 @@ const certificates = [
 ];
 
 const Certificate = () => {
+
+    const navigate = useNavigate();
+
+    const handleBackButtonClick = () => {
+        navigate('/main_page');
+
+    }
+
     return (
         <div className="certificate-page">
             <div className="content">
                 <h1 className="title">Certifications</h1>
-                <p className="quote">Behind every great achievement, there is a dreamer of great dreams</p>
+                <p className="quote">"Behind every great achievement, there is a dreamer of great dreams"</p>
                 <div className="card-container">
                     {certificates.map((cert, index) => (
                         <div key={index} className="card">
@@ -273,6 +282,19 @@ const Certificate = () => {
                     ))}
                 </div>
             </div>
+            <div className="back-button-container007 text-center my-4">
+                <button
+                    className="back-button007 animate__animated animate__pulse animate__infinite"
+                    onClick={handleBackButtonClick}
+                >
+                    <span className="back-icon007">&#8592;</span> Back
+                </button>
+            </div>
+
+            {/* Footer */}
+            <footer className="footer">
+                <p>Creator: Krushna Thakkar</p>
+            </footer>
         </div>
     );
 }
