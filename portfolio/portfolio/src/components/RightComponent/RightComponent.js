@@ -12,7 +12,6 @@ const RightComponent = () => {
                     Explore Projects
                 </Link>
             </div>
-            <div className="arrow303"></div>
         </div>
     );
 };

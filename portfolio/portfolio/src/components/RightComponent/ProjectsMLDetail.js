@@ -1,5 +1,7 @@
 import React from 'react';
 import './ProjectsMLDetail.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const ProjectsMLDetail = () => {
     const projects = [
@@ -149,10 +151,17 @@ const ProjectsMLDetail = () => {
         return 'project-card yellow-border';
     };
 
+    const navigate = useNavigate();
+
+    const handleBackButtonClick = () => {
+        navigate('/main_page');
+
+    }
+
     return (
 
         <div className="projects-detail-container">
-            
+
             <h2>
                 <span className="spaced-word">Projects:     Machine Learning +</span>
                 <span className="spaced-word">Reinforcement Learning +</span>
@@ -179,6 +188,15 @@ const ProjectsMLDetail = () => {
                     </div>
                 </div>
             ))}
+            <div className="back-button-container007 text-center my-4">
+                <button
+                    className="back-button007 animate__animated animate__pulse animate__infinite"
+                    onClick={handleBackButtonClick}
+                >
+                    <span className="back-icon007">&#8592;</span> Back
+                </button>
+            </div>
+
             {/* Footer */}
             <footer className="footer">
                 <p>Creator: Krushna Thakkar</p>

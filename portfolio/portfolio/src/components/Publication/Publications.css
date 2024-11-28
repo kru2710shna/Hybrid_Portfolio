@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.publications-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.publications-title {
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 400px;
+}
+
+.publications-quote {
+    margin-top: 20px;
+    margin-bottom: 500px;
+}
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.publication-card {
+    background-color: #222;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 15`px 15px #00bfff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.publication-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.publication-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.publication-topic,
+.publication-field,
+.publication-description {
+    margin: 5px 0;
+}
+
+.publication-stats {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    width: 100%;
+    max-width: 600px;
+}
+
+.publication-image {
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating animation for cards */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

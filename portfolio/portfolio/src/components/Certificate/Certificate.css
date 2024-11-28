@@ -1,0 +1,137 @@
+
+.title {
+    padding-top: 5cm;
+    color: white;
+    margin-left: 700px ;
+}
+
+.quote {
+    color: white;
+    margin-bottom: 500px ;
+    margin-left: 650px ;
+
+}
+
+/* Bootstrap card styling */
+.card {
+    display: flex; /* Use flexbox to align image and text side by side */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: flex-start;
+    align-items: center; /* Vertically center align */
+    width: 170%; 
+    max-width: 1550px;  /* Set a maximum width for cards */
+    height: 350px; /* Set the height to be 10px larger than the image */
+    border: 2px solid rgb(245, 141, 4); /* Brown border */
+    border-radius: 10px;
+    box-shadow: 20px 20px 12px rgba(2, 207, 253, 0.632);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Space between rows */
+    padding: 20px; /* Padding around the entire card */
+    padding-left: 20px;
+    margin-left: 60px;
+}
+
+/* Certificate image */
+.certificate-image {
+    width: 250px; /* Fixed width for image */
+    height: 250px; /* Fixed height for image (square) */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-right: 30px; /* Space between image and text */
+    margin-left: -10px;
+}
+
+/* Certificate details */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack the details vertically */
+    justify-content: space-between; /* Ensure space between title, text, and button */
+    flex: 1; /* Allow the text area to take up remaining space */
+    padding: 15px; /* Padding inside the body for readability */
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px; /* Space below title */
+    align-items: center;
+}
+.card-text-org {
+    font-size: 1.2rem;
+    color: black; /* Lighter text for description */
+    margin-bottom: 10px; /* Space below text */
+    position: relative; /* Make the element positioned */
+    left: -50px; /* Move text to the left */
+}
+
+.card-text-date {
+    font-size: 1.0rem;
+    color: black; /* Lighter text for description */
+    margin-bottom: 10px; /* Space below text */
+    position: relative; /* Make the element positioned */
+    left: -50px; /* Move text to the left */
+}
+
+.card-text-desc {
+    font-size: 1.0rem;
+    color: black; /* Lighter text for description */
+    margin-bottom: 10px; /* Space below text */
+    position: relative; /* Make the element positioned */
+    left: -50px; /* Move text to the left */
+
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: black; /* Lighter text for description */
+    margin-bottom: 10px; /* Space below text */
+    position: relative; /* Make the element positioned */
+    left: -50px; /* Move text to the left */
+}
+
+.card-text strong {
+    color: #fff; /* Highlight labels in white */
+}
+
+/* Button styling inside the card */
+.btn-primary {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 15px; /* Make the button more prominent */
+    text-align: center; /* Center the text inside the button */
+    margin-top: 10px; /* Add space above the button */
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.5); /* Bright shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;  /* Stack cards vertically */
+        align-items: center;  /* Center the cards when stacked */
+    }
+
+    .card {
+        flex-direction: column;  /* Stack image and details vertically on small screens */
+        height: auto;  /* Allow the card to adjust height automatically */
+    }
+
+    .certificate-image {
+        margin-right: 0;  /* Remove the margin on small screens */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    .card-body {
+        align-items: center;  /* Center the text in smaller screen layout */
+    }
+}

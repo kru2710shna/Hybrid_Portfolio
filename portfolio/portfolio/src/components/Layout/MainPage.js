@@ -22,6 +22,12 @@ const MainPage = () => {
     const goToVolunteer = () => {
         navigate('/volunteer'); // Navigate to experience page
     };
+    const goToVoCertificate = () => {
+        navigate('/Certificate'); // Navigate to experience page
+    };
+    const goToVoPublication = () => {
+        navigate('/Publication '); // Navigate to experience page
+    };
     
 
 
@@ -43,7 +49,7 @@ const MainPage = () => {
                 <p className='p_ss'>Click Each to checkout in Detail</p>
                 <p></p>
                 <div className="stats">
-                    <div className="stat-item">
+                    <div className="stat-item" onClick={goToVoCertificate}>
                         <AnimatedNumber target={34} speed={500} />
                         <p>Certifications & Licenses</p>
                     </div>
@@ -67,7 +73,7 @@ const MainPage = () => {
                         <AnimatedNumber target={2} speed={500} />
                         <p>Recommendations</p>
                     </div>
-                    <div className="stat-item">
+                    <div className="stat-item" onClick={goToVoPublication}>
                         <AnimatedNumber target={25} speed={500} />
                         <p>Publications</p>
                     </div>
